@@ -1,10 +1,16 @@
 import React from "react";
 import { resourcesLinks, platformLinks, communityLinks } from "../constants";
+import SocialIcon from "./SocialIcon";
 
 export default function Footer() {
   return (
     <footer className="mt-20 border-t py-10 border-neutral-700">
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+        <div>
+          <h3 className="text-md font-semibold mb-5">VR Site</h3>
+          <p className="font-normal text-neutral-400">Empower your creativity and bring your VR app ideas to life with our intuitive tools.</p>
+          <SocialIcon />
+        </div>
         <div>
           <h3 className="text-md font-semibold mb-5">Resources</h3>
           <ul className="space-y-2">
