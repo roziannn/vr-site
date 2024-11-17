@@ -16,7 +16,7 @@ export default function Workflow() {
         <motion.div variants={fadeIn("right", 0.1)} initial="hidden" whileInView={"show"} viewport={{ once: true, amount: 0.8 }} className="p2 w-full lg:w-1/2">
           <img src={codeImg} alt="code img" />
         </motion.div>
-        <motion.div variants={fadeIn("left", 0.2)} initial="hidden" whileInView={"show"} viewport={{ once: true, amount: 0.8 }} className="pt-12 w-full lg:w-1/2">
+        <motion.div variants={fadeIn("down", 0.2)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.8 }} className="pt-12 w-full lg:w-1/2">
           {checklistItems.map((list, index) => (
             <div key={index} className="flex mb-12">
               <div className="text-green-500 mx-6 bg-neutral-900 h-10 w-10 p-2 justify-center items-center rounded-full">
