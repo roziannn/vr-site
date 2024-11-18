@@ -6,7 +6,7 @@ import { fadeIn } from "../variant";
 
 export default function Feature() {
   return (
-    <div className="relative mt-40 border-b border-neutral-800 min-h-[800px]" id="features">
+    <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]" id="features">
       <div className="text-center">
         <span className="bg-neutral-900 text-orange-500 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase">feature</span>
         <motion.h2 variants={fadeIn("left", 0.5)} initial="hidden" whileInView={"show"} viewport={{ once: false, amount: 0.7 }} className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-10 tracking-wide">

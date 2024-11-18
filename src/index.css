@@ -8,3 +8,23 @@
   font-family: "Poppins", sans-serif;
   color-scheme: dark;
 }
+body {
+  @apply bg-[#000008];
+}
+
+.curved-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.curved-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 15px;
+  width: 100%;
+  border: solid 3px #cb1829;
+  border-color: #cb1829 transparent transparent transparent;
+  border-radius: 50%;
+}
