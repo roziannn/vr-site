@@ -17,7 +17,7 @@ export const Input = ({ id, type, placeholder }) => {
 const Register = () => {
   return (
     <div className="flex flex-col h-screen" id="hero">
-      <div className="flex flex-row justify-between items-center w-full h-full">
+      <div className="flex flex-row justify-between items-center w-full h-auto lg:h-full">
         {/* left */}
         <div className="relative hidden lg:flex w-8/12 h-full p-5">
           <img src={vr2} className="rounded-lg w-full h-full object-cover" alt="man using VR" />
@@ -32,11 +32,14 @@ const Register = () => {
 
         {/* right*/}
         <div className="flex flex-col w-full lg:w-1/2 h-full p-10 justify-center">
-          <div className="flex mb-5 lg:hidden text-white font-bold text-xl">
+          <div className="flex mb-1 lg:hidden text-white font-bold text-xl">
             <a href="/">VMax</a>
           </div>
+          <div className="lg:hidden text-white font-semibold tracking-wider text-xl mb-10">
+            <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text"> The future </span> is closer <br /> than you think.
+          </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-2 lg:mb-4 ">Create an account</h1>
-          <p className="text-md lg:text-lg mb-2 lg:mb-4 text-neutral-400">
+          <p className="text-sm lg:text-lg mb-2 lg:mb-4 text-neutral-400">
             Already have an account?{" "}
             <a href="/login" className="text-orange-600 hover:underline">
               Log in
