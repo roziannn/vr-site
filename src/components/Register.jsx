@@ -16,7 +16,7 @@ export const Input = ({ id, type, placeholder }) => {
 
 const Register = () => {
   return (
-    <div className="flex flex-col h-screen" id="hero">
+    <div className="flex flex-col h-screen" id="register">
       <div className="flex flex-row justify-between items-center w-full h-auto lg:h-full">
         {/* left */}
         <div className="relative hidden lg:flex w-8/12 h-full p-5">
@@ -42,12 +42,12 @@ const Register = () => {
           <p className="text-sm lg:text-lg mb-2 lg:mb-4 text-neutral-400">
             Already have an account?{" "}
             <a href="/login" className="text-orange-600 hover:underline">
-              Log in
+              log in
             </a>
           </p>
           <div className="mt-5">
             <form>
-              <div class="grid gap-6 mb-6 md:grid-cols-2">
+              <div className="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
                   <Label htmlFor="first_name" text="First Name" />
                   <Input type="text" id="first_name" placeholder="John" />
@@ -57,21 +57,21 @@ const Register = () => {
                   <Input type="text" id="last_name" placeholder="Doe" />
                 </div>
               </div>
-              <div class="mb-6">
+              <div className="mb-6">
                 <Label htmlFor="email" text="Email" />
                 <Input type="email" id="email" placeholder="john.doe@company.com" />
               </div>
-              <div class="mb-6">
+              <div className="mb-6">
                 <Label htmlFor="password" text="Password" />
                 <Input type="password" id="password" placeholder="•••••••••" />
               </div>
-              <div class="flex items-start mb-6">
-                <div class="flex items-center h-5">
+              <div className="flex items-start mb-6">
+                <div className="flex items-center h-5">
                   <Input type="checkbox" id="remember" value="" />
                 </div>
-                <label for="remember" class="ms-2 text-sm font-medium text-neutral-400">
+                <label for="remember" className="ms-2 text-sm font-medium text-neutral-400">
                   I agree with the{" "}
-                  <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">
+                  <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">
                     terms and conditions
                   </a>
                   .
@@ -79,7 +79,7 @@ const Register = () => {
               </div>
             </form>
           </div>
-          <button type="submit" class="text-white bg-gradient-to-r from-orange-500 to-orange-800 py-3 lg:py-4 px-4  rounded-md focus:ring-4 focus:outline-none font-medium text-sm w-full sm:w-auto text-center ">
+          <button type="submit" className="text-white bg-gradient-to-r from-orange-500 to-orange-800 py-3 lg:py-4 px-4  rounded-md focus:ring-4 focus:outline-none font-medium text-sm w-full sm:w-auto text-center ">
             Create account
           </button>
         </div>

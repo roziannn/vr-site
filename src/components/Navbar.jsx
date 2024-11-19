@@ -44,12 +44,12 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-6 items-center">
-            <a href="/" className="py-2 px-3 border rounded-md">
+            <a href="/login" className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800">
               Sign In
             </a>
-            <a href="/register" className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md">
+            {/* <a href="/register" className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md">
               Create an account
-            </a>
+            </a> */}
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>{mobileDrawerOpen ? <X /> : <Menu />}</button>
@@ -65,12 +65,12 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="flex space-x-6">
-              <a href="#" className="py-2 px-3 border rounded-md">
+              <a href="/login" className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800">
                 Sign In
               </a>
-              <a href="/register" className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800">
+              {/* <a href="/register" className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800">
                 Create an account
-              </a>
+              </a> */}
             </div>
           </div>
         )}

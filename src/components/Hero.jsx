@@ -20,7 +20,7 @@ export default function Hero() {
           </h1>
           <p className="mt-5 text-lg text-start text-neutral-500 max-w-4xl">Boost your creativity and turn your VR app ideas into reality with our easy-to-use tools. Start now and create amazing virtual experiences!</p>
           <div className="flex justify-start my-10">
-            <a href="#" className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md">
+            <a href="/register" className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md">
               Start for free
             </a>
             <a href="#" className="py-3 px-4 mx-3 rounded-md border">
