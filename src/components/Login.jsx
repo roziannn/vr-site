@@ -18,7 +18,7 @@ export const Input = ({ id, type, placeholder }) => {
 const Login = () => {
   return (
     <div className="flex h-screen items-center justify-center px-4 bg-cover bg-center" id="login" style={{ backgroundImage: `url(${vr2})` }}>
-      <div className="absolute  inset-0 h-full bg-gradient-to-b from-black/50 to-neutral-900/80"></div>
+      <div className="absolute  inset-0 bottom-0 h-full bg-gradient-to-b from-black/50 to-neutral-900/80"></div>
       <div className="relative z-10 border border-neutral-800 bg-neutral-900/50 backdrop-blur-lg rounded-lg w-full sm:w-2/3 md:w-1/2 lg:w-1/3 px-6 py-10">
         <div className="flex justify-between items-center mb-4 lg:mb-8">
           <div className="text-white  font-bold text-2xl">
